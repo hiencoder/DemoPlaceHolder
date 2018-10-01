@@ -39,7 +39,7 @@ public class LoadMoreActivity extends AppCompatActivity {
             iphvNews.addView(new ItemNew(news.get(i),this));
         }
 
-        //Sort list
+        //Sort list sau 8s
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
