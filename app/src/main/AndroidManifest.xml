@@ -12,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.FeedActivity"></activity>
-        <activity android:name=".ui.LoadMoreActivity">
-        </activity>
+        <activity android:name=".ui.FeedActivity" />
+        <activity android:name=".ui.LoadMoreActivity"></activity>
         <activity android:name=".ui.ExpandableActivity">
+
+        </activity>
+        <activity android:name=".ui.TinderSwipeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

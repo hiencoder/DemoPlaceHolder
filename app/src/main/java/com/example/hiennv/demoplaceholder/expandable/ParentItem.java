@@ -51,25 +51,22 @@ public class ParentItem {
         list.add("Lemon");
         list.add("StrawBerry");
         list.add("WolfBerry");
-        list.add("Apple");
-        list.add("Apple");
-        list.add("Apple");
-        list.add("Apple");
     }
 
     @Resolve
     public void onResolved(){
         //toggle collapse
         ivItemMenu.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_down));
+        tvItemTile.setText(list.get(parentPos));
     }
 
     @Collapse
     public void onCollapse(){
-        ivItemMenu.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_up));
+        ivItemMenu.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_down));
     }
 
     @Expand
     public void onExpand(){
-        ivItemMenu.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_down));
+        ivItemMenu.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_up));
     }
 }
